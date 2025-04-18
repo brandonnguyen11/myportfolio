@@ -26,11 +26,10 @@
   }
   
   footer {
-    background-color: #eee;
+    margin-top: 5rem;
     padding: 10px;
     text-align: center;
-    border-radius: 8px;
-    font-size: 0.9em;
+    font-size: .9em;
   }
   
   /* Responsive tweaks */
@@ -45,19 +44,23 @@
   }
 .about{
     margin-top: 2.5rem;
+    min-width: 300px;
+    max-width: 680px;
+    justify-self: center;
 }
 
 .aboutHeader {
     color:rgb(0, 0, 0);
     font-weight: 600;
     font-family: "Roboto", sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     border: 2px solid #b72222;
+    line-height: 2.8rem;
 
 }
 
 .aboutMe {
-    color: #828282;
+    color: #737373;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
     font-size: .9rem;
@@ -104,14 +107,27 @@
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
-    margin-bottom: .7rem;
+    color: #000000;
+    margin-bottom: .3rem;
+    text-align: left;
+    
+}
+
+.section-container {
+    max-width: 680px;
+    margin: 0 auto;
+    
 }
 
 .workExperience {
     display: flex;
     flex-direction: row;
-    border: 2px solid #333333;
+    border: 2px solid #d61e9f;
     margin-bottom: 1.2rem;
+    max-width: 680px;
+    min-width: 300px;
+    justify-self: center;
+    width: 100%
 }
 
 .companyLogo {
@@ -173,15 +189,20 @@
 
 .progress-bar{
     margin-top: .4rem;
-    width: 600px;
+    width: 100%;
     height: 2.5rem;
     background-color: #cccccc;
     border-radius: 10px;
     border: 2px solid #351358;
     margin-bottom: .4rem;
+    overflow: hidden;
 }
 
-
+.progress-fill {
+    height: 100%;
+    background:  #000000; /* green gradient */
+    
+}
 
 .boxed-header {
     justify-self: center;
@@ -202,17 +223,20 @@
 .description-header {
     justify-self: center;
     margin-top: .5rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: "Roboto", sans-serif;
-    font-size: 1.7rem;
+    font-size: 3rem;
+    max-width: 680px;
     color: #000000;
 }
 
 .description {
     justify-self: center;
     text-align: center;
-    color: #828282;
-    width: 32.5rem
+    color: #737373;
+    max-width: 500px;
+    min-width: 300px;
+    font-size: 1rem;
 }
 
 a{
@@ -254,7 +278,7 @@ a{
     font-weight: 300;
     font-family: "Roboto", sans-serif;
     font-size: .75rem;
-    margin-bottom: .6rem;
+    margin-bottom: 1.8rem;
     padding: 5px;
 
 }
@@ -264,6 +288,31 @@ a{
     flex-direction: row;
     padding: 7px;
 }
+
+.project-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 30px;
+    width: 70px;
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-size: .8rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-button:hover {
+    background-color: #a3a3a3; /* Darker indigo */
+}
+
 .project-website {
     justify-content: center;
     text-align: center;
