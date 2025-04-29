@@ -440,5 +440,15 @@ a{
     
     /* border: 1px solid #351358; */
     height: 200px;
-    width: 500px;
+    width: 200px;
+    
+}
+
+.project-image-container{
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    align-items: center;
+    justify-self: center;
 }
